@@ -1,0 +1,170 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verify vehicle color and make match to expected value in dvla site  from mime type Excel file type",
+        "description": "",
+        "id": "test-to-validate-vechile-make-and-colour;verify-vehicle-color-and-make-match-to-expected-value-in-dvla-site--from-mime-type-excel-file-type",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 688407924,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I scan the directory to retrieve the supported \"xlsx\" files",
+            "match": {
+              "arguments": [
+                {
+                  "val": "xlsx",
+                  "offset": 48
+                }
+              ],
+              "location": "VechileVerifications.i_scan_the_directory_to_retrieve_the_supported_csv_xlsx_files(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1040251575,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I read vehicle reg numbers from one of the file",
+            "match": {
+              "location": "VechileVerifications.i_read_vehicle_reg_numbers_from_one_of_the_file()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11498096399,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I launch dvla site",
+            "match": {
+              "location": "VechileVerifications.i_launch_dvla_site()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30734990350,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I search for vehicle info by reg number",
+            "match": {
+              "location": "VechileVerifications.i_search_for_vehicle_info_by_reg_number()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72296,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should be able match the expected color and make from the given file",
+            "match": {
+              "location": "VechileVerifications.i_should_be_able_match_the_expected_color_and_make_from_the_given_file()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Verify vehicle color and make match to expected value in dvla site from mime type CSV file type",
+        "description": "",
+        "id": "test-to-validate-vechile-make-and-colour;verify-vehicle-color-and-make-match-to-expected-value-in-dvla-site-from-mime-type-csv-file-type",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6664679,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I scan the directory to retrieve the supported \"csv\" files",
+            "match": {
+              "arguments": [
+                {
+                  "val": "csv",
+                  "offset": 48
+                }
+              ],
+              "location": "VechileVerifications.i_scan_the_directory_to_retrieve_the_supported_csv_xlsx_files(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10026252,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I read vehicle reg numbers from one of the file",
+            "match": {
+              "location": "VechileVerifications.i_read_vehicle_reg_numbers_from_one_of_the_file()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3421996203,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I launch dvla site",
+            "match": {
+              "location": "VechileVerifications.i_launch_dvla_site()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29221440748,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I search for vehicle info by reg number",
+            "match": {
+              "location": "VechileVerifications.i_search_for_vehicle_info_by_reg_number()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 293925,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should be able match the expected color and make from the given file",
+            "match": {
+              "location": "VechileVerifications.i_should_be_able_match_the_expected_color_and_make_from_the_given_file()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test to validate vechile make and colour",
+    "description": "",
+    "id": "test-to-validate-vechile-make-and-colour",
+    "keyword": "Feature",
+    "uri": "VechileVerifications.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@VechicleRegistrationEnquiry"
+      }
+    ]
+  }
+]
