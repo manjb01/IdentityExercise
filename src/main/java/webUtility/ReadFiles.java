@@ -3,7 +3,6 @@ package webUtility;
 
 import org.apache.commons.io.FileUtils;
 
-import javax.activation.MimetypesFileTypeMap;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -12,6 +11,8 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import org.apache.commons.io.FilenameUtils;
+import org.apache.tika.Tika;
 
 public class ReadFiles {
 
@@ -47,14 +48,22 @@ public class ReadFiles {
 
         System.out.println("Total number of files found:  " + files.size());
         files.forEach(file -> {
-
             log.displayMesage("###########################################");
-
             log.displayMesage("file name:  " + file.getName());
-            log.displayMesage("file mime type:  " + MimetypesFileTypeMap.getDefaultFileTypeMap().getContentType(file));
-
+            log.displayMesage("file mime type:  " + getMimeType(file));
+            log.displayMesage("file Extension:  " + FilenameUtils.getExtension(file.getName()));
             log.displayMesage("file size:  " + file.length());
         });
     }
+    public String getMimeType(File file){
+            Tika mimeTika = new Tika();
+            String mimeType;
+            try {
+                mimeType = mimeTika.detect(new File (file.getAbsolutePath()));
+            } catch (IOException exp) {
+                mimeType = "Unknown";
+            }
+        return mimeType;
+        }
+    }
 
-}

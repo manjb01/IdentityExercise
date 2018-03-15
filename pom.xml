@@ -8,6 +8,8 @@
     <artifactId>IdentityExercise</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <name>slf4jconfig-javalogging</name>
+    <url>http://maven.apache.org</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -38,7 +40,16 @@
         </plugins>
     </build>
     <dependencies>
-
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>LATEST</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>LATEST</version>
+        </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -75,7 +86,7 @@
         <dependency>
             <groupId>org.apache.tika</groupId>
             <artifactId>tika-java7</artifactId>
-            <version>1.17</version>
+            <version>LATEST</version>
         </dependency>
         <dependency>
             <groupId>log4j</groupId>
