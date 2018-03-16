@@ -86,8 +86,8 @@ public class VechileVerifications {
 
                 if ((vehicle.getRegistrationNumber()).equalsIgnoreCase(exp_registrationNumber)) {
                    try {
-                       Assert.assertTrue("Failed: Vehicle make  matched", (vehicle.getMake()).contains(exp_Make));
-                       Assert.assertTrue("Failed: Vehicle color matched", (vehicle.getColour()).contains(exp_Colour));
+                       Assert.assertTrue("Failed: Vehicle make  matched", (vehicle.getMake()).equals(exp_Make));
+                       Assert.assertTrue("Failed: Vehicle color matched", (vehicle.getColour()).equals(exp_Colour));
                    } catch(AssertionError e)
                 {
                     logger.displayMesage("Exception found: " + e.getMessage()+":Failed");
