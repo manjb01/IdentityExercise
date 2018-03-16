@@ -23,6 +23,7 @@ https://github.com/manjb01/IdentityExercise/tree/master/TestResult
 Screenshots: Screenshot of failed tests is captured in the below folder  
 https://github.com/manjb01/IdentityExercise/tree/master/src/screenshots
 
-
-
+Note :
+Refactored the Unit tests to search files by mimetype 
+with both valid and invalid mimetypes and to display all the file types based on the file extension returned . 
  
